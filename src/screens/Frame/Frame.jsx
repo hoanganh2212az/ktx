@@ -80,22 +80,22 @@ export const Frame = () => {
   return (
     <div className="flex min-h-screen bg-[#F5F5F5]">
       {/* Sidebar */}
-      <div className="w-[400px] bg-white p-8">
+      <div className="w-[400px] bg-[#1e1e1e] p-8 text-white">
         {/* User Profile */}
         <div className="flex items-center gap-4 mb-12">
-          <Avatar className="w-16 h-16 bg-[#6366F1] text-white">
+          <Avatar className="w-16 h-16 bg-[#a40000] text-white">
             <span className="text-2xl">LA</span>
           </Avatar>
           <div>
             <h2 className="text-2xl font-semibold">Lê Hoàng Anh</h2>
-            <span className="px-3 py-1 bg-[#E0E7FF] text-sm rounded-full">Admin</span>
+            <span className="px-3 py-1 bg-[#E0E7FF] text-[#1e1e1e] text-sm rounded-full">Admin</span>
           </div>
         </div>
 
         {/* System Name */}
         <div className="mb-12">
-          <h1 className="text-[#6366F1] text-2xl font-semibold mb-2">PHÒNG TRỌ PTIT</h1>
-          <div className="h-0.5 bg-[#6366F1] w-full"></div>
+          <h1 className="text-[#a40000] text-2xl font-semibold mb-2">PHÒNG TRỌ PTIT</h1>
+          <div className="h-0.5 bg-[#a40000] w-full"></div>
         </div>
 
         {/* Navigation Menu */}
@@ -106,8 +106,8 @@ export const Frame = () => {
               onClick={() => navigate(item.path)}
               className={`w-full text-left px-6 py-4 rounded-xl text-lg font-medium ${
                 item.active
-                  ? "bg-[#E0E7FF] text-[#6366F1]"
-                  : "text-gray-600 hover:bg-gray-50"
+                  ? "bg-[#a40000] text-white"
+                  : "text-white hover:bg-[#2d2d2d]"
               }`}
             >
               {item.title}
@@ -118,7 +118,7 @@ export const Frame = () => {
 
       {/* Main Content */}
       <div className="flex-1 p-8 overflow-y-auto">
-        <h1 className="text-[#6366F1] text-3xl font-semibold mb-8">
+        <h1 className="text-[#a40000] text-3xl font-semibold mb-8">
           THANH TOÁN & HOÁ ĐƠN
         </h1>
 
@@ -135,7 +135,7 @@ export const Frame = () => {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="px-6 py-3 bg-[#E0E7FF] border-none rounded-xl flex items-center gap-2"
+                className="px-6 py-3 bg-[#a40000] text-white border-none rounded-xl flex items-center gap-2 hover:bg-[#8a0000]"
               >
                 {selectedArea}
                 <ChevronDown className="w-5 h-5" />
@@ -156,7 +156,7 @@ export const Frame = () => {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="px-6 py-3 bg-[#E0E7FF] border-none rounded-xl flex items-center gap-2"
+                className="px-6 py-3 bg-[#a40000] text-white border-none rounded-xl flex items-center gap-2 hover:bg-[#8a0000]"
               >
                 {selectedFloor}
                 <ChevronDown className="w-5 h-5" />
@@ -173,6 +173,13 @@ export const Frame = () => {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
+          <Button
+            variant="outline"
+            className="px-6 py-3 bg-[#a40000] text-white border-none rounded-xl hover:bg-[#8a0000] flex items-center gap-2"
+          >
+            <Download className="w-5 h-5" />
+            Xuất file danh sách
+          </Button>
         </div>
 
         {/* Room Sections */}
@@ -180,12 +187,12 @@ export const Frame = () => {
           {/* Tiền Phòng Section */}
           <section>
             <div className="flex justify-between items-center mb-6">
-              <Button className="bg-[#6366F1] text-white px-8 py-3 rounded-xl">
+              <Button className="bg-[#a40000] text-white px-8 py-3 rounded-xl hover:bg-[#8a0000]">
                 TIỀN PHÒNG
               </Button>
               <Button
                 variant="outline"
-                className="bg-[#E0E7FF] border-none text-[#6366F1] rounded-xl"
+                className="bg-[#a40000] text-white border-none rounded-xl hover:bg-[#8a0000]"
                 onClick={() => setExpandedMoney(!expandedMoney)}
               >
                 {expandedMoney ? 'Thu gọn' : 'Xem thêm'}
@@ -214,12 +221,12 @@ export const Frame = () => {
           {/* Tiền Điện Section */}
           <section>
             <div className="flex justify-between items-center mb-6">
-              <Button className="bg-[#6366F1] text-white px-8 py-3 rounded-xl">
+              <Button className="bg-[#a40000] text-white px-8 py-3 rounded-xl hover:bg-[#8a0000]">
                 TIỀN ĐIỆN
               </Button>
               <Button
                 variant="outline"
-                className="bg-[#E0E7FF] border-none text-[#6366F1] rounded-xl"
+                className="bg-[#a40000] text-white border-none rounded-xl hover:bg-[#8a0000]"
                 onClick={() => setExpandedElectrical(!expandedElectrical)}
               >
                 {expandedElectrical ? 'Thu gọn' : 'Xem thêm'}

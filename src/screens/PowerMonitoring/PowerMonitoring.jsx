@@ -75,22 +75,22 @@ export const PowerMonitoring = () => {
   return (
     <div className="flex min-h-screen bg-[#F5F5F5]">
       {/* Sidebar */}
-      <div className="w-[400px] bg-white p-8">
+      <div className="w-[400px] bg-[#1e1e1e] p-8 text-white">
         {/* User Profile */}
         <div className="flex items-center gap-4 mb-12">
-          <Avatar className="w-16 h-16 bg-[#6366F1] text-white">
+          <Avatar className="w-16 h-16 bg-[#a40000] text-white">
             <span className="text-2xl">LA</span>
           </Avatar>
           <div>
             <h2 className="text-2xl font-semibold">Lê Hoàng Anh</h2>
-            <span className="px-3 py-1 bg-[#E0E7FF] text-sm rounded-full">Admin</span>
+            <span className="px-3 py-1 bg-[#E0E7FF] text-[#1e1e1e] text-sm rounded-full">Admin</span>
           </div>
         </div>
 
         {/* System Name */}
         <div className="mb-12">
-          <h1 className="text-[#6366F1] text-2xl font-semibold mb-2">PHÒNG TRỌ PTIT</h1>
-          <div className="h-0.5 bg-[#6366F1] w-full"></div>
+          <h1 className="text-[#a40000] text-2xl font-semibold mb-2">PHÒNG TRỌ PTIT</h1>
+          <div className="h-0.5 bg-[#a40000] w-full"></div>
         </div>
 
         {/* Navigation Menu */}
@@ -101,8 +101,8 @@ export const PowerMonitoring = () => {
               onClick={() => navigate(item.path)}
               className={`w-full text-left px-6 py-4 rounded-xl text-lg font-medium ${
                 item.active
-                  ? "bg-[#E0E7FF] text-[#6366F1]"
-                  : "text-gray-600 hover:bg-gray-50"
+                  ? "bg-[#a40000] text-white"
+                  : "text-white hover:bg-[#2d2d2d]"
               }`}
             >
               {item.title}
@@ -113,7 +113,7 @@ export const PowerMonitoring = () => {
 
       {/* Main Content */}
       <div className="flex-1 p-8">
-        <h1 className="text-[#6366F1] text-3xl font-semibold mb-8">
+        <h1 className="text-[#a40000] text-3xl font-semibold mb-8">
           GIÁM SÁT TIÊU THỤ ĐIỆN
         </h1>
 
@@ -130,7 +130,7 @@ export const PowerMonitoring = () => {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="px-6 py-3 bg-[#E0E7FF] border-none rounded-xl flex items-center gap-2"
+                className="px-6 py-3 bg-[#a40000] text-white border-none rounded-xl flex items-center gap-2 hover:bg-[#8a0000]"
               >
                 {selectedArea}
                 <ChevronDown className="w-5 h-5" />
@@ -151,7 +151,7 @@ export const PowerMonitoring = () => {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="px-6 py-3 bg-[#E0E7FF] border-none rounded-xl flex items-center gap-2"
+                className="px-6 py-3 bg-[#a40000] text-white border-none rounded-xl flex items-center gap-2 hover:bg-[#8a0000]"
               >
                 {selectedFloor}
                 <ChevronDown className="w-5 h-5" />
@@ -176,7 +176,7 @@ export const PowerMonitoring = () => {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="px-6 py-3 bg-white border-none rounded-xl text-lg font-medium flex items-center gap-2"
+                className="px-6 py-3 bg-[#a40000] text-white border-none rounded-xl text-lg font-medium flex items-center gap-2 hover:bg-[#8a0000]"
               >
                 {selectedMonth}
                 <ChevronDown className="w-5 h-5" />
@@ -195,7 +195,7 @@ export const PowerMonitoring = () => {
           </DropdownMenu>
           <Button
             variant="outline"
-            className="px-6 py-3 bg-[#E0E7FF] border-none rounded-xl text-[#6366F1] flex items-center gap-2"
+            className="px-6 py-3 bg-[#a40000] text-white border-none rounded-xl hover:bg-[#8a0000] flex items-center gap-2"
           >
             <Download className="w-5 h-5" />
             Xuất file danh sách
