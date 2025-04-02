@@ -61,10 +61,10 @@ export const Reports = () => {
       number: "203",
       needsMaintenance: false,
       occupants: [
-        { id: 1, name: "Nguyễn Văn An", gender: 'male' },
-        { id: 2, name: "Nguyễn Thị Xuân Anh", gender: 'female' },
-        { id: 3, name: "Lê Quang Anh", gender: 'male' },
-        { id: 4, name: "Trần Thị Vân Anh", gender: 'female' }
+        { id: 1, name: "Nguyễn Văn An", gender: "male" },
+        { id: 3, name: "Lê Quang Anh", gender: "male" },
+        { id: 1, name: "Nguyễn Văn Bình", gender: "male" },
+        { id: 3, name: "Phạm Văn Đức", gender: "male" }
       ]
     },
     {
@@ -73,10 +73,10 @@ export const Reports = () => {
       number: "204",
       needsMaintenance: true,
       occupants: [
-        { id: 1, name: "Nguyễn Văn Bình", gender: 'male' },
-        { id: 2, name: "Trần Thị Mai", gender: 'female' },
-        { id: 3, name: "Phạm Văn Đức", gender: 'male' },
-        { id: 4, name: "Lê Thị Hoa", gender: 'female' }
+        { id: 2, name: "Nguyễn Thị Xuân Anh", gender: "female" },
+        { id: 4, name: "Trần Thị Vân Anh", gender: "female" },
+        { id: 2, name: "Trần Thị Mai", gender: "female" },
+        { id: 4, name: "Lê Thị Hoa", gender: "female" }
       ]
     },
     {
@@ -85,9 +85,10 @@ export const Reports = () => {
       number: "205",
       needsMaintenance: false,
       occupants: [
-        { id: 1, name: "Trần Văn Cường", gender: 'male' },
-        { id: 2, name: "Nguyễn Thị Lan", gender: 'female' },
-        { id: 3, name: "Lê Văn Dũng", gender: 'male' }
+        { id: 1, name: "Trần Văn Cường", gender: "male" },
+        { id: 3, name: "Lê Văn Dũng", gender: "male" },
+        { id: 1, name: "Nguyễn Văn Tùng", gender: "male" },
+        { id: 3, name: "Lê Văn Hoàng", gender: "male" }
       ]
     },
     {
@@ -96,10 +97,10 @@ export const Reports = () => {
       number: "206",
       needsMaintenance: true,
       occupants: [
-        { id: 1, name: "Phạm Văn Nam", gender: 'male' },
-        { id: 2, name: "Nguyễn Văn Hùng", gender: 'male' },
-        { id: 3, name: "Trần Văn Mạnh", gender: 'male' },
-        { id: 4, name: "Lê Văn Phong", gender: 'male' }
+        { id: 1, name: "Phạm Văn Nam", gender: "male" },
+        { id: 2, name: "Nguyễn Văn Hùng", gender: "male" },
+        { id: 3, name: "Trần Văn Mạnh", gender: "male" },
+        { id: 4, name: "Lê Văn Phong", gender: "male" }
       ]
     },
     {
@@ -108,10 +109,10 @@ export const Reports = () => {
       number: "207",
       needsMaintenance: false,
       occupants: [
-        { id: 1, name: "Nguyễn Thị Hương", gender: 'female' },
-        { id: 2, name: "Trần Thị Thảo", gender: 'female' },
-        { id: 3, name: "Lê Thị Hà", gender: 'female' },
-        { id: 4, name: "Phạm Thị Mai", gender: 'female' }
+        { id: 1, name: "Nguyễn Thị Hương", gender: "female" },
+        { id: 2, name: "Trần Thị Thảo", gender: "female" },
+        { id: 3, name: "Lê Thị Hà", gender: "female" },
+        { id: 4, name: "Phạm Thị Mai", gender: "female" }
       ]
     },
     {
@@ -120,9 +121,8 @@ export const Reports = () => {
       number: "208",
       needsMaintenance: false,
       occupants: [
-        { id: 1, name: "Nguyễn Văn Tùng", gender: 'male' },
-        { id: 2, name: "Trần Thị Linh", gender: 'female' },
-        { id: 3, name: "Lê Văn Hoàng", gender: 'male' }
+        { id: 2, name: "Nguyễn Thị Lan", gender: "female" },
+        { id: 2, name: "Trần Thị Linh", gender: "female" }
       ]
     }
   ];
