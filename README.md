@@ -29,9 +29,3 @@ If you are satisfied with the result, you can finally build the project for rele
 ```
 npm run build
 ```
-
-
-```
-npm install @vitejs/plugin-react --save-dev
-npm run dev
-```
